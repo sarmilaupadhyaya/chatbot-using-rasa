@@ -1,0 +1,63 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - snack_ask
+  - snack_affirm
+  - snack_deny
+  - polite
+  - not_polite
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_snack
+- utter_enjoy_snack
+- utter_have_good_day
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+    #buttons:
+    #- title: "I am good"
+     # payload: '/mood_great'
+    #- title: "Not fine"
+    #  payload: '/mood_unhappy'
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+    #buttons:
+    #- title: "Thank you"
+     # payload: '/mood_great'
+    #- title: "I didn't like it"
+     # payload: '/mood_unhappy'
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_have_good_day:
+  - text: "Oh! Thats fine. Have a good day."
+
+  utter_snack:
+  - text: "Todays snack is choila chiura. DO you want to have it"
+
+  utter_enjoy_snack:
+  - text: "Noted.Enjoy!"
